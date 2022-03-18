@@ -1,0 +1,49 @@
+0318 메모장
+
+git bash here ( 리눅스 명령창 처음 실행 )
+
+$ git config --global user.name dosunggil
+$ git config --global user.mail chothegenius@gmail.com
+
+// 처음으로 나의 깃허브 아이디와 메일을 연동하겠다는 명령어
+// 윈도우에서는 한 윈도우당 하나의 깃허브 계정만 연동하여 사용할 수 있따
+// 깃허브에 처음 연동할때 한번만 하면댐
+
+$ = prompt
+
+
+**프로젝트를 업로드 하는 순서
+
+이제 git 허브 사이트에서 새로운 repository 생성 
+
+$ git init : git local 저장소 설정 (초기화,신청)
+//프로젝트를 처음 깃허브에 업로드할때 최초로 설정하는 것 
+//해당 폴더에 .git 폴더가 생김 (숨김파일) 
+//앞으로 업로드하는 파일은 .git 안에 압축되어 저장됨
+
+
+$ git add README.md
+// 실제로 우리가 명령할땐 $ git add .
+// add . << views 폴더 내에서 깃허브에 업로드 되지 않은 모든 폴더 및 파일을 압축하여 .git 폴더에 저장해달라 (파일 하나하나 지정하면 귀찮으므로)
+
+$ git commit -m first
+// first 라는 이름으로 다음 몇개의 파일을 올릴 준비를 한다.
+
+$ git remote add origin https://github.com/dosunggil/hello-view.git 
+// 앞으로 origin 을 명령에 포함시키면 다음 주소에 업로드하라
+// 이 부분을 잘못하면 .git을 지우고 처음부터 다시해야함
+
+$ git push -u origin master
+//여기서 push 다음 "-u" 를 입력하고 다음 명령을 넣으면, 
+그 이후 프로젝트 업로드할때 $ git push 만 입력하면 -u 이후는 기억해서 알아서 해준다 (기억)
+
+끝
+커밋을 더 할떄
+add -> commit -> push
+add -> commit -> push
+add -> commit -> push
+
+반ㅇ복
+
+
+$ rm -rf .git : local repository 삭제
