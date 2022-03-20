@@ -47,3 +47,8 @@ add -> commit -> push
 
 
 $ rm -rf .git : local repository 삭제
+
+$ git clone (repository 주소) //내 local에 해당 파일들 다운로드 (아예 새로운 repository)
+
+
+$ git pull : 같은 repository가 등록되어있는 git hub와 동기화 시키는것 (git hub 가 더 최신 파일) 이러면 local 에 새로운 파일이 다운됨
