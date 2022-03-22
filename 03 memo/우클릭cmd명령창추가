@@ -1,0 +1,7 @@
+1. 서브라임 켜서
+2. 창 다 끄고
+3. file 메뉴에서 save with encoding
+4. UTF 16 LE with BOM
+5. 파일명 "윈도우CMD.reg"
+6. callor 깃허브 레퍼런스에 "윈도우커맨드reg"
+7. row 복사 붙여넣기 저장 후 실행

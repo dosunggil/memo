@@ -38,6 +38,7 @@ $ git push -u origin master
 그 이후 프로젝트 업로드할때 $ git push 만 입력하면 -u 이후는 기억해서 알아서 해준다 (기억)
 
 끝
+
 커밋을 더 할떄
 add -> commit -> push
 add -> commit -> push
@@ -46,7 +47,7 @@ add -> commit -> push
 반ㅇ복
 
 
-$ rm -rf .git : local repository 삭제
+$ rm -rf .git : local repository 삭제 (.git 폴더 삭제)
 
 $ git clone (repository 주소) //내 local에 해당 파일들 다운로드 (아예 새로운 repository)
 
