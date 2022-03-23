@@ -1,11 +1,12 @@
 # 웹 문서 만들기
+### (hub가 아닌 텍스트파일로 열어볼것)
 
 ** html : 웹문서를 만드는 언어 / 웹문서의 기본골격(명사)<br>
 css(cascading style sheet) : 웹문서를 보기 좋게 꾸미는 디자인표현(형용사,부사)<br>
 javascript/jQuery : 프로그래밍적 요소로 사용자의 행위에 의한 동작(동사)<br><br>
 
 
-### 블록 레벨 텍스트 태그
+### ! 블록 레벨 텍스트 태그
 * --혼자서 한 줄을 차지하여 너비가 100% 꽉 차게 표시되는 태그
 
 * 1)h태그: heading태그 - 제목을 표시하는 태그 ; h1~h6 
@@ -21,7 +22,7 @@ javascript/jQuery : 프로그래밍적 요소로 사용자의 행위에 의한 �
 
 * 5) div태그(division) : <div>영역을 나누는 태그</div>
 
-### 인라인 레벨 텍스트 태그
+### ! 인라인 레벨 텍스트 태그
 * --한 줄을 차지하지 않는 태그로 화면에 표시되는 컨텐츠 만큼의 너비를 차지하는 태그
 
 * 1) strong태그 : 텍스트를 <strong>굵게</strong> 표시하는 태그
@@ -54,17 +55,36 @@ caption 태그 : 표에 사용하는 표 제목 표시태그
 	</tr>	
 </table>
 
-### 태그에 대한 꾸미기 style 지정해보기
+### ! 태그에 대한 꾸미기 style 지정해보기
 * 인라인 스타일: 태그에 직접지정
 * 내부 스타일: 헤드 태그 안에 스타일 선언하여 설정 - html문서내부에 style 태그 안에 지정하는 형태
 * 외부 스타일: style만 정하는 css파일을 따로 만들어 html 문서에 연결하는 형태
 
-### 이미지와 비디오 태그
+### ! 이미지와 비디오 태그
 	
 * a태그 : 링크는 현재 웹 페이지에서 다른 페이지로 연결하기 위한 형태
 --<a href="웹 링크 or 지정한 id">링크로 이동</a>
+<p>링크할 페이지를 새 창에서 연결하려면 target 속성값을 _blank로 지정<br>
+지정하지 않으면 기본 값은 _self<br>
+현재 페이지에서 특정 위치로 연결할 수도 있는데 이런 형태를 앵커(anchor)라고 한다.
+</p>
 * <style>
 a {	text-decoration: none; 언더바 삭제
 	color: inherit; /* initial;*/ 폰트의 색상을 기본으로 }
 </style> 
 --head 부분의 스타일에서 앵커의 기본 스타일을 설정해본것    
+
+* <p><strong>img 태그</strong> : 이미지태그<br>
+	폴더내의 이미지표현, 웹상의 이미지표현
+</p>
+--<img id="no2" alt="이미지를 찾을 수 없습니다." src="../images/cxat.jpg" style="width:500px;"><br>
+./ 또는 사용하지 않는 경우 = html 과 같은 폴더 내에 위치한 파일<br>
+../ 상위 폴더 에서 찾을때<br>
+alt : 이미지가 정상 로딩 안될 때 이미지에 대한 설명을 넣는 속성 <br>
+title : 오버마우스시 보여지는 설명<br>
+
+* <h2>비디오파일</h2>
+		<video src="../media/wolf.mp4" width="500px" controls autoplay muted > 
+		자동재생을 하기 위해선 muted 도 같이 써줘야 한다.
+		<track kind="subtitles" src="../media/wolf.vtt"	srclang="en" default>
+	</video><br>
