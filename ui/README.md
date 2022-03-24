@@ -88,3 +88,59 @@ title : 오버마우스시 보여지는 설명<br>
 		자동재생을 하기 위해선 muted 도 같이 써줘야 한다.
 		<track kind="subtitles" src="../media/wolf.vtt"	srclang="en" default>
 	</video><br>
+
+	### 추가적인 input 태그
+
+	* <table>
+	<tr><th>number 태그</th>
+		<td>숫자만 입력할 수 있는 태그</td>
+	</tr>
+	<tr>
+		<th>date 태그</th>
+		<td>날짜를 선택할 수 있는 태그</td>
+	</tr>
+	<tr>
+		<th>month 태그</th>
+		<td>월을 선택할 수 있는 태그</td>
+	</tr>
+	<tr>
+		<th>time 태그</th>
+		<td>시간을 선택할 수 있는 태그</td>
+	</tr>
+	<tr>
+		<th>button 태그</th>
+		<td>아무런 기능이 없는 버튼 태그</td>
+	</tr>
+</table>
+
+
+
+<hr>
+<p><input type="button" value="새 창에서 naver.com 열기" onclick="window.open('http://naver.com')" ></p>
+<p><input type="button" value="새 창에서 google.com 열기" onclick="window.open('http://google.com', 'new')" ></p>
+<p><input type="button" value="새 창에서 선택자 실습 열기" onclick="window.open('../0322style/selecter.html')" ></p>
+<hr>
+<p><input type="number" min="1" max="10" value="0" ></p>
+<!-- step="2" => 2씩 올림 -->
+<div><input type="date" value="2022-03-22"></div>
+
+
+<div><input type="month" value="2022-03"></div>
+
+<p><input type="time" value="16:23" ></p>
+
+<p><input type="button" value="nothing" onclick="alert('nothing')" ></p>
+
+<p><input type="button" value="현재 창에서 naver.com 열기" onclick="window.open('http://naver.com', '_self')" ></p>
+
+<p><input type="button" value="새 창으로 회원가입 화면 열기" onclick="window.open('../0321/form_ex01.html')" ></p>
+
+<p><input type="button" value="회원가입 팝업으로 열기" onclick="window.open('../0321/form_ex01.html','join', 'width=500px, height= 400px')" ></p>
+ alert 에서 "" 과 '' 를 섞어서 사용했다 
+ 명명() : 함수 
+ 명명된 함수를 호출한다
+ window.open( url )
+ window.open( url, 창 이름, 창의 속성 ) 
+ 창 이름 : 창 이름 or target의 형태를 지정할 수 있다
+( _self는 현재 창에서/ 그 외에는 새 창에서 열림 
+
