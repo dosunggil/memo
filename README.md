@@ -26,3 +26,6 @@ java -jar lombok.jar
 ```
 하여 설치 진행
 * 경로를 이클립스 폴더로 지정하고 설치하면 끝
+
+# mybatis-context 설정하기 (Spring 에 DB 연결 작업)
+* [링크](https://github.com/dosunggil/Spring/tree/master/SpMVC_003_SchoolV6)
